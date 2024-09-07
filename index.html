@@ -1,96 +1,63 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Chessboard</title>
+    <meta charset="UTF-8" />
+    <title>CSS Flag Project</title>
     <style>
-      /* Write your code here */
-      /* Each square should be 100px by 100px */
-      /* My colours for white: #f0d9b5, black: #b58863 */
-      .container {
-        display: grid;
-        width: 800px;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      /* Write your CSS Code here */
+      .flag {
+        width: 900px;
+        height: 600px;
+        background-color: red;
+        position: relative;
       }
-      .white {
-        background-color: #f0d9b5;
-        height: 100px;
-        width: 100px;
+      .flag > div {
+        width: 100%;
+        height: 300px;
+        background-color: blue;
+        position: absolute;
+        top: 150px;
       }
-      .black {
-        background-color: #b58863;
-        height: 100px;
-        width: 100px;
+      .flag > div > div {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background-color: white;
+        position: relative;
+        top: 50px;
+        left: 350px;
+      }
+      p {
+        margin: 0px;
+        font-size: 5rem;
+        text-align: center;
+        color: white;
+      }
+      .flag > div > div p {
+        color: black;
       }
     </style>
   </head>
 
+  <!-- 
+  IMPORTANT! Do not change any HTML
+Don't add any classes/ids/elements 
+Use what you know about combining selectors 
+and CSS specificity instead.
+Hint 1: The flag is 900px by 600px and the circle is 200px by 200px.
+Hint 2: You can use CSS inspection to get the colors from
+https://appbrewery.github.io/flag-of-laos/
+
+-->
+
   <body>
-    <div class="container">
-      <div class="white"></div>
-      <div class="black"></div>
-      <div class="white"></div>
-      <div class="black"></div>
-      <div class="white"></div>
-      <div class="black"></div>
-      <div class="white"></div>
-      <div class="black"></div>
-      <div class="black"></div>
-      <div class="white"></div>
-      <div class="black"></div>
-      <div class="white"></div>
-      <div class="black"></div>
-      <div class="white"></div>
-      <div class="black"></div>
-      <div class="white"></div>
-      <div class="white"></div>
-      <div class="black"></div>
-      <div class="white"></div>
-      <div class="black"></div>
-      <div class="white"></div>
-      <div class="black"></div>
-      <div class="white"></div>
-      <div class="black"></div>
-      <div class="black"></div>
-      <div class="white"></div>
-      <div class="black"></div>
-      <div class="white"></div>
-      <div class="black"></div>
-      <div class="white"></div>
-      <div class="black"></div>
-      <div class="white"></div>
-      <div class="white"></div>
-      <div class="black"></div>
-      <div class="white"></div>
-      <div class="black"></div>
-      <div class="white"></div>
-      <div class="black"></div>
-      <div class="white"></div>
-      <div class="black"></div>
-      <div class="black"></div>
-      <div class="white"></div>
-      <div class="black"></div>
-      <div class="white"></div>
-      <div class="black"></div>
-      <div class="white"></div>
-      <div class="black"></div>
-      <div class="white"></div>
-      <div class="white"></div>
-      <div class="black"></div>
-      <div class="white"></div>
-      <div class="black"></div>
-      <div class="white"></div>
-      <div class="black"></div>
-      <div class="white"></div>
-      <div class="black"></div>
-      <div class="black"></div>
-      <div class="white"></div>
-      <div class="black"></div>
-      <div class="white"></div>
-      <div class="black"></div>
-      <div class="white"></div>
-      <div class="black"></div>
-      <div class="white"></div>
+    <div class="flag">
+      <p>The Flag</p>
+      <div>
+        <div>
+          <p>of Laos</p>
+        </div>
+      </div>
     </div>
   </body>
 </html>
